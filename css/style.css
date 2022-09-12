@@ -121,6 +121,9 @@ section {
 .dark .navbar{
   background-color: var(--black) !important;
 }
+.dark .navbar-light .navbar-toggler-icon{
+  filter: invert(1);
+}
 #Home {
   background-image: url("img/home-background.jpeg");
   background-size: cover;
@@ -816,17 +819,6 @@ p {
   width: 450px;
 }
 
-@media only screen and (max-width:500px) {
-  .website_demo .website_demo_block{
-    transform:scale(0.98) translateX(-40px);
-  }
-}
-@media only screen and (max-width:400px) {
-  .website_demo .website_demo_block{
-    transform:scale(0.7) translateX(-70px);
-  }
-}
-
 /* switch mode */
 
 #switch-time svg {
@@ -862,4 +854,18 @@ p {
   bottom: 0;
   margin: auto;
   left: 0;
+}
+
+@media only screen and (max-width:500px) {
+  .website_demo .website_demo_block{
+    transform:scale(0.98) translateX(-40px);
+  }
+  #switch-time .set-pos{
+    width: 65px;
+  }
+}
+@media only screen and (max-width:400px) {
+  .website_demo .website_demo_block{
+    transform:scale(0.7) translateX(-70px);
+  }
 }

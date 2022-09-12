@@ -3,7 +3,7 @@ Vue.config.devtools = true;
 Vue.component("card", {
 
     template: `
-    <div class="website_demo_block" data-aos="fade-up">
+    <div class="website_demo_block">
                     <div class="window imac">
                     <slot name="image"></slot>
                     </div>
