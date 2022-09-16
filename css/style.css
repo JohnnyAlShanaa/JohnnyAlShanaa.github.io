@@ -856,6 +856,133 @@ p {
   left: 0;
 }
 
+
+#slideshow {
+  margin: 0 auto;
+  padding-top: 50px;
+  height: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.entire-content {
+  margin: auto;
+  width: 190px;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 80px;
+}
+
+.content-carrousel {
+  width: 100%;
+  position: absolute;
+  float: right;
+  animation: rotar 15s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.content-carrousel figure {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(10) {
+  transform: rotateY(360deg) translateZ(300px);
+}
+
+.shadow {
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px #000;
+  border-radius: 1px;
+}
+
+.content-carrousel img {
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+}
+
+.content-carrousel img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+.content-carrousel figure .figure-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: #2274a5;
+  text-align: center;
+}
+.content-carrousel figure .figure-content h3 {
+  color: #f7bf30;
+  margin: 0;
+}
+.content-carrousel figure .figure-content .figure-hover {
+  opacity: 0;
+  color: #C9CAD9;
+  font-size: 12px;
+}
+.content-carrousel figure:hover .figure-content .figure-hover {
+  opacity: 1;
+}
+.content-carrousel figure a{
+  text-decoration: none;
+}
+
+.content-carrousel figure:hover.shadow {
+  position: absolute;
+  box-shadow: 0px 0px 30px 5px #000;
+  border-radius: 1px;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
 @media only screen and (max-width:500px) {
   .website_demo .website_demo_block{
     transform:scale(0.98) translateX(-40px);
@@ -869,3 +996,4 @@ p {
     transform:scale(0.7) translateX(-70px);
   }
 }
+
