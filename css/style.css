@@ -15,16 +15,16 @@
   --accent-5: #ffe29a;
 }
 
-.dark .bg-white{
-    background-color: var(--dark-grey) !important;
+.dark .bg-white {
+  background-color: var(--dark-grey) !important;
 }
-.dark .bg-light-grey{
+.dark .bg-light-grey {
   background-color: var(--dark-bg) !important;
 }
-.dark{
+.dark {
   color: var(--light-grey) !important;
 }
-.light{
+.light {
   color: var(--black) !important;
 }
 
@@ -115,13 +115,13 @@ section {
   padding-right: 0.65em;
   padding-left: 0.65em;
 }
-.dark .navbar-light .navbar-nav .nav-link{
+.dark .navbar-light .navbar-nav .nav-link {
   color: var(--light-grey);
 }
-.dark .navbar{
+.dark .navbar {
   background-color: var(--black) !important;
 }
-.dark .navbar-light .navbar-toggler-icon{
+.dark .navbar-light .navbar-toggler-icon {
   filter: invert(1);
 }
 #Home {
@@ -248,9 +248,9 @@ img {
 }
 
 .container-center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #Portfolio p {
   line-height: 1.5em;
@@ -273,11 +273,20 @@ img {
   font-weight: 700;
   text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
 }
-.img-cover{
-    object-fit: cover;
+.img-cover {
+  object-fit: cover;
 }
-
-
+.experience-subtitle {
+  font-size: 12px;
+  color: #829eff;
+}
+#Experience h4{
+  margin: 0;
+}
+.experience-content {
+  padding: 0 20px;
+  font-size: 13px;
+}
 
 /* services */
 
@@ -519,7 +528,9 @@ html {
   height: 100%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -527,30 +538,42 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
-  background: #FAFAFA;
+  background: #fafafa;
   height: 100%;
   position: relative;
 }
 
 a {
-  color: #e74c3c;
+  /* color: #e74c3c; */
+  color: inherit;
   text-decoration: none;
 }
 a:hover {
-  color: #bf2718;
+  color: #829eff  ;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
-a, input {
+a,
+input {
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-a:active, a:focus, input:active, input:focus, button:active, button:focus, textarea:active, textarea:focus, select:active, select:focus {
+a:active,
+a:focus,
+input:active,
+input:focus,
+button:active,
+button:focus,
+textarea:active,
+textarea:focus,
+select:active,
+select:focus {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -564,7 +587,11 @@ p {
 .browser-wrap {
   position: relative;
   width: 100%;
-  background-image: radial-gradient(circle farthest-corner at center, #3c4b57 0%, #1c262b 100%);
+  background-image: radial-gradient(
+    circle farthest-corner at center,
+    #3c4b57 0%,
+    #1c262b 100%
+  );
 }
 
 .browser {
@@ -598,7 +625,8 @@ p {
   vertical-align: middle;
   color: #666;
 }
-.browser .header, .browser .body {
+.browser .header,
+.browser .body {
   padding: 0.5em 1em;
 }
 .browser .header {
@@ -778,7 +806,7 @@ p {
 .aboutText div {
   display: inline-block;
 }
-.browser-height{
+.browser-height {
   height: 100%;
 }
 
@@ -854,7 +882,6 @@ p {
   margin: auto;
   left: 0;
 }
-
 
 #slideshow {
   margin: 0 auto;
@@ -956,13 +983,13 @@ p {
 }
 .content-carrousel figure .figure-content .figure-hover {
   opacity: 0;
-  color: #C9CAD9;
+  color: #c9cad9;
   font-size: 12px;
 }
 .content-carrousel figure:hover .figure-content .figure-hover {
   opacity: 1;
 }
-.content-carrousel figure a{
+.content-carrousel figure a {
   text-decoration: none;
 }
 
@@ -981,18 +1008,16 @@ p {
   }
 }
 
-
-@media only screen and (max-width:500px) {
-  .website_demo .website_demo_block{
-    transform:scale(0.98) translateX(-40px);
+@media only screen and (max-width: 500px) {
+  .website_demo .website_demo_block {
+    transform: scale(0.98) translateX(-40px);
   }
-  #switch-time .set-pos{
+  #switch-time .set-pos {
     width: 65px;
   }
 }
-@media only screen and (max-width:400px) {
-  .website_demo .website_demo_block{
-    transform:scale(0.7) translateX(-70px);
+@media only screen and (max-width: 400px) {
+  .website_demo .website_demo_block {
+    transform: scale(0.7) translateX(-70px);
   }
 }
-
