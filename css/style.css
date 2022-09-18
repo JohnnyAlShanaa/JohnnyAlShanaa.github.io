@@ -203,6 +203,9 @@ img {
 .button:nth-child(6):hover .icon {
   background: #333;
 }
+.button:nth-child(7):hover .icon{
+  background: #f2a60c;
+}
 
 .button:nth-child(1) span {
   color: #e1306c;
@@ -227,7 +230,9 @@ img {
 .button:nth-child(6) span {
   color: #333;
 }
-
+.button:nth-child(7) span {
+  color: #f2a60c;
+}
 .button .icon {
   width: 60px;
   height: 60px;
@@ -240,7 +245,6 @@ img {
 .button .icon i {
   font-size: 25px;
   line-height: 60px;
-  transition: all 0.3s ease-in-out;
 }
 
 .button:hover i {
@@ -280,12 +284,16 @@ img {
   font-size: 12px;
   color: #829eff;
 }
-#Experience h4{
+#Experience h4 {
   margin: 0;
 }
 .experience-content {
   padding: 0 20px;
   font-size: 13px;
+}
+#Experience 
+a:hover {
+  color: #829eff;
 }
 
 /* services */
@@ -549,7 +557,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #829eff  ;
+  color: unset;
 }
 a:hover,
 a:focus {
@@ -917,6 +925,9 @@ p {
   height: 120px;
   overflow: hidden;
   position: absolute;
+  background-color: #2274a5;
+  border: 1px solid;
+  padding: 6px; 
 }
 
 .content-carrousel figure:nth-child(1) {
@@ -974,16 +985,16 @@ p {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  background: #2274a5;
+  background: #f8f8f8;
   text-align: center;
 }
-.content-carrousel figure .figure-content h3 {
+.content-carrousel figure .figure-content h4 {
   color: #f7bf30;
   margin: 0;
 }
 .content-carrousel figure .figure-content .figure-hover {
   opacity: 0;
-  color: #c9cad9;
+  color: #767676;
   font-size: 12px;
 }
 .content-carrousel figure:hover .figure-content .figure-hover {
