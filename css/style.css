@@ -296,6 +296,15 @@ a:hover {
   color: #829eff;
 }
 
+.fav-web img{
+  max-width: 250px;
+  padding: 20px 0;
+}
+.fav-web{
+  padding: 10px;
+}
+
+
 /* services */
 
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
